@@ -14,13 +14,15 @@ export const LogoTicker = () => {
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
-            className="flex gap-14 flex-none"
+            className="flex gap-14 flex-none pr-14"
             animate={{
-              translateX: "-100%",
+              translateX: "-50%",
             }}
             transition={{
-              duration: 5,
+              duration: 20,
               repeat: Infinity,
+              ease: "linear",
+              repeatType: "loop",
             }}
           >
             <Image
